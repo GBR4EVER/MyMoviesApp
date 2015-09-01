@@ -33,3 +33,25 @@ body {
   margin-top: 30px;
   color: $slight-gray;
 }
+
+.center {
+  text-align: center;
+  margin-left: -55px;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing:-2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 20px;
+  text-align: center;
+}
