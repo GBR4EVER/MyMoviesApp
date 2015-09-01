@@ -31,12 +31,16 @@ body {
   margin-left: 45px;
   float: left;
   margin-top: 30px;
-  color: $slight-gray;
+}
+
+.btn, .btn-warning, .btn-small, {
+  background-color: $slight-gray;
+  border-color: none;
 }
 
 .center {
   text-align: center;
-  margin-left: -55px;
+  margin-right: 50px;
 }
 
 h1, h2, h3, h4 {
@@ -51,7 +55,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
-  padding-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
   text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+.left {
+  text-align: left;
+  letter-spacing: .5px;
+}
+
+.footer {
+  margin-top: 25px;
+  border-top: 1px solid $navbar-default-bg;
 }
