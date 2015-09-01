@@ -1,2 +1,35 @@
+$navbar-default-bg: #338E9D;
+$slight-gray: #667F83;
+$navbar-default-color: $slight-gray;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  #logo:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+body {
+  padding-top: 125px;
+  padding-left: 50px;
+}
+
+.nav-item {
+  margin-left: 45px;
+  float: left;
+  margin-top: 30px;
+  color: $slight-gray;
+}
