@@ -33,10 +33,29 @@ body {
   margin-top: 30px;
 }
 
-.btn, .btn-warning, .btn-small, {
+#btnnav {
   background-color: $slight-gray;
-  border-color: none;
 }
+
+#btnnav:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-default {
+  border: none;
+}
+
+.btn-warning.btn-small {
+  background-color: $navbar-default-bg;
+  border: 1px solid $slight-gray;
+}
+
+.btn-warning.btn-small:hover {
+  background-color: $slight-gray;
+  border: 1px solid $navbar-default-bg;
+}
+
 
 .center {
   text-align: center;
