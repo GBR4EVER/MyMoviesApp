@@ -10,5 +10,10 @@ class ReviewTest < ActiveSupport::TestCase
   test "review shouls be valid" do
     assert @review.valid?
   end
-
+  
+  test "author should be present" do
+    @review.author = " "
+    assert_not @review.valid?
+  end
+  
 end
