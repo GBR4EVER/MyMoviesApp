@@ -23,6 +23,20 @@ Things you may want to cover:
 
 * ...
 
+* Testing Specs for Reviews:
+
+author :string
+summary :text
+description :text
+
+- authors name must be present
+- authors name must be within 5 to 100 characters
+- summary must be present
+- summer must be between 10 and 500 characters
+- description must be present
+- description must be between 20 and 500 characters
+- movie_id must be present
+
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
