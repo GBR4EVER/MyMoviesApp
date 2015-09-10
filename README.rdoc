@@ -37,6 +37,14 @@ description :text
 - description must be between 20 and 500 characters
 - movie_id must be present
 
+* Testing Specs for Movies:
+
+moviename :string
+genre :string
+- moviename must be present
+- moviename must be within 3 to 50 characters
+- genre must be present
+- genre must be between 5 to 50 characters
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
