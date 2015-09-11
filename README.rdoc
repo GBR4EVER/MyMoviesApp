@@ -42,6 +42,7 @@ description :text
 moviename :string
 genre :string
 - moviename must be present
+- moviename must be unique
 - moviename must be within 3 to 50 characters
 - genre must be present
 - genre must be between 5 to 50 characters
