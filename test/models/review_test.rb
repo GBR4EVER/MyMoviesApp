@@ -3,12 +3,18 @@ require 'test_helper'
 class ReviewTest < ActiveSupport::TestCase
 
   def setup
-    @review = Review.new(author: "Joe Schmo", summary: "this is the best movie ever", 
+    @movie = Movie.create(moviename: "Batman", genre: "Action")
+    @review = @movie.reviews.new(author: "Joe Schmo", summary: "this is the best movie ever", 
               description: "A man walks into a terrible scenario.", email: "testemail@example.com")
   end
   
   test "review should be valid" do
     assert @review.valid?
+  end
+  
+  test "chef_id should be present" do
+    @review.movie_id = nil
+    assert_not @review.valid?
   end
   
   test "author should be present" do
