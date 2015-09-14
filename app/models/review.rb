@@ -1,5 +1,7 @@
 class Review < ActiveRecord::Base
   
+  belongs_to :movie
+  
   # Before the email is saved to the database, it will make the email downcase regardless of user input.
   before_save { self.email = email.downcase }
   
@@ -10,5 +12,6 @@ class Review < ActiveRecord::Base
   validates :email, presence: true, length: { maximum: 105 },
                                     uniqueness: { case_sensitive: false },
                                     format: { with: VALID_EMAIL_REGEX }
+  
                                     
 end
