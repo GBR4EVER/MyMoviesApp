@@ -1,0 +1,25 @@
+<p>
+  <h1>Create a new review!</h1>
+</hr>
+</p>
+
+<div class="row">
+  <div class="well col-md-8 col-md-offset-2">
+    <%= form_for @review do |r| %>
+      <%= r.label :author %>
+      <%= r.text_field :author%>
+      
+      <%= r.label :email %>
+      <%= r.text_field :email %>
+      
+      <%= r.label :description %>
+      <%= r.text_field :description%>
+      
+      <%= r.label :summary %>
+      <%= r.text_area :summary, rows: 6 %>
+      
+      <%= r.submit 'Create Review', class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>
+
