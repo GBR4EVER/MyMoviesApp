@@ -1,0 +1,22 @@
+<p>
+  <h1><%= @review.movie.moviename %></h1>
+</p>
+
+<div class="row">
+  <div class="col-md-4 pull-right center">
+    <img src=""/>
+    <p>
+      <h5>Brought to you by: <%= @review.author %></h5>
+  </div>
+  <div class="col-md-8">
+    <h3><%= @review.description %></h3>
+    <div class="well">
+      <p>
+        <strong>Summary:</strong>
+      </p>
+      <%= @review.summary %>
+    </div>
+  </div>
+</div>
+
+<h5><%= link_to "Return to Reviews List", reviews_path, class: "btn btn-warning btn-small" %></h5>
