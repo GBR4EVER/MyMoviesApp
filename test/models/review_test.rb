@@ -12,7 +12,7 @@ class ReviewTest < ActiveSupport::TestCase
     assert @review.valid?
   end
   
-  test "chef_id should be present" do
+  test "movie_id should be present" do
     @review.movie_id = nil
     assert_not @review.valid?
   end
@@ -28,7 +28,7 @@ class ReviewTest < ActiveSupport::TestCase
   end
   
   test "author length should not be too long" do
-    @review.author = "a" * 4
+    @review.author = "a"
     assert_not @review.valid?
   end
   
@@ -38,7 +38,7 @@ class ReviewTest < ActiveSupport::TestCase
   end
   
   test "summary length should not be too long" do
-    @review.summary = "b" * 201
+    @review.summary = "b" * 2001
     assert_not @review.valid?
   end
   
@@ -53,12 +53,12 @@ class ReviewTest < ActiveSupport::TestCase
   end
   
   test "description length should not be too long" do
-    @review.description = "c" * 501
+    @review.description = "c" * 201
     assert_not @review.valid?
   end
   
   test "description length should not be too short" do
-    @review.description = "c" * 19
+    @review.description = "c" * 4
     assert_not @review.valid?
   end
   
