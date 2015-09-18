@@ -9,12 +9,13 @@
       <h5>Brought to you by: <%= @review.author %></h5>
   </div>
   <div class="col-md-8">
+    <%= link_to "Edit this review", edit_review_path(@review), class: "btn btn-success pull-right" %>
     <h3><%= @review.description %></h3>
     <div class="well">
       <p>
         <strong>Summary:</strong>
       </p>
-      <%= @review.summary %>
+      <%= simple_format(@review.summary) %>
     </div>
   </div>
 </div>
